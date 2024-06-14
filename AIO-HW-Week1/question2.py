@@ -18,7 +18,7 @@ def sigmoid(n):
     print(f"The value of sigmoid is: {sigmoid}")
 
 
-def reLu_function(n):
+def relu_function(n):
 
     if n <= 0:
 
@@ -28,7 +28,7 @@ def reLu_function(n):
         return n
 
 
-def ELU_function(n, alpha):
+def elu_function(n, alpha):
 
     if n <= 0:
         elu_func = alpha * (math.exp(n)-1)
