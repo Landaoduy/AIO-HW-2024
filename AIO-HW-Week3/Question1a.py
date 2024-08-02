@@ -9,7 +9,7 @@ class softmax_function(nn.Module):
     def forward(self, x):
         x_exp = torch.exp(x)
 
-        partition = x_exp.sum(0, keepdim=True)  # dimension = 0
+        partition = x_exp.sum(0, keepdim =True)  # dimension = 0
 
         return x_exp / partition
 

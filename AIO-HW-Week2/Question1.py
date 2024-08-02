@@ -18,3 +18,4 @@ def find_max_sliding_window(num_list, k):
 
   else:
     print('Invalid Input or k is smaller than 1')
+

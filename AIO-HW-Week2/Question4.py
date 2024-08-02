@@ -15,7 +15,13 @@ def levenshtein_distance(s, t):
                 matrix[c][r] = matrix[c - 1][r - 1]
             else:
                 matrix[c][r] = min(matrix[c - 1][r] + 1,
-                               matrix[c][r - 1] + 1,
-                               matrix[c - 1][r - 1] + 1)
+                                   matrix[c][r - 1] + 1,
+                                   matrix[c - 1][r - 1] + 1)
 
     return matrix[m][n]
+
+
+s = "kitten"
+t = "sitting"
+print(f"Levenshtein Distance: {levenshtein_distance(s, t)}")
+
