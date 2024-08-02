@@ -13,3 +13,4 @@ def count_char(word):
     print(char_count)
 
 count_char('Happiness')
+

@@ -18,4 +18,3 @@ def read_file(file_name):
 
     except FileNotFoundError:
         print(f"File {file_name} does not found")
-
